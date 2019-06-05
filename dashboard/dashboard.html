@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- ionicons.com -->
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+
+
+
+  </head>
+  <body>
+
+    <!-- Container -->
+    <div class="container-fluid">
+        <!-- Row -->
+        <div class="row">
+          <!-- Navigation panel -->
+          <nav class="col-sm-2">
+            navigation logo
+          </nav>
+          <nav class="col-sm-8">
+            navigation default space
+          </nav>
+          <!-- Sign-out Button -->
+          <nav class="col-sm-2">
+              <button type="button" class="btn btn-outline-warning">Cerrar Sesion</button>
+          </nav>
+        </div>
+        <!-- Row -->
+        <div class="row">
+          <!-- Left panel -->
+          <aside class="col-sm-2">
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <!-- Presentation card -->
+                  <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                  <!-- (Products) Separator -->
+                  <span class="badge badge-light"><ion-icon name="cube"></ion-icon> Productos</span>
+                  <a class="nav-link" id="products-registration-tab" data-toggle="pill" href="#products-registration" role="tab" aria-controls="products-registration" aria-selected="false">Alta de productos</a>    
+                  <!-- (Inventory) Separator -->
+                  <span class="badge badge-light"><ion-icon name="clipboard"></ion-icon> Inventario</span>
+                  <a class="nav-link" id="inventory-list-tab" data-toggle="pill" href="#inventory-list" role="tab" aria-controls="inventory-list" aria-selected="false">Lista de inventario</a>
+                  <a class="nav-link" id="purchase-record-tab" data-toggle="pill" href="#purchase-record" role="tab" aria-controls="purchase-record" aria-selected="false">Registro de compra</a>
+                  <!-- (Financial) Separator -->
+                  <span class="badge badge-light"><ion-icon name="cash"></ion-icon> Finanzas</span>
+                  <a class="nav-link" id="financial-report-tab" data-toggle="pill" href="#financial-report" role="tab" aria-controls="financial-report" aria-selected="false">Reporte financiero</a>
+                  
+                </div>
+          </aside>
+          <!-- Section -->
+          <section class="col-sm-10">
+              <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade" id="products-registration" role="tabpanel" aria-labelledby="products-registration-tab">Productos</div>
+                  <div class="tab-pane fade" id="inventory-list" role="tabpanel" aria-labelledby="inventory-list-tab">Alta de Productos</div>
+                  <div class="tab-pane fade" id="purchase-record" role="tabpanel" aria-labelledby="purchase-record-tab">Registro de compra</div>
+                  <div class="tab-pane fade" id="financial-report" role="tabpanel" aria-labelledby="financial-report-tab">Reporte financiero</div>
+              </div>
+          </section>
+      </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $('#products-registration').load('forms/products-registration.html');
+        });
+      </script>
+  </body>
+</html>
